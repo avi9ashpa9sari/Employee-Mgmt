@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeManagement.Controllers
 {
-    //[Route("Home")]
+    //[Route("Home")]             code Ammended
     [Authorize]
     public class HomeController : Controller
     {

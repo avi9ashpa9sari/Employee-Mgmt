@@ -34,8 +34,7 @@ namespace EmployeeManagement.Controllers
         }
 
         [HttpGet]
-        [AllowAnonymous]
-        // GET: /<controller>/
+        [AllowAnonymous]        
         public IActionResult Register()
         {
             return View();
@@ -66,9 +65,6 @@ namespace EmployeeManagement.Controllers
                     {
                         return RedirectToAction("ListUser", "Administration");
                     }
-
-                    //await signInManager.SignInAsync(user, isPersistent: false);                   to be deleted
-                    //return RedirectToAction("index", "home");
 
                     ViewBag.ErrorTitle = "Registration Successful";
                     ViewBag.ErrorMessage = "Before you login please confirm your email by clicking on the confirmation link we have emailed you";
